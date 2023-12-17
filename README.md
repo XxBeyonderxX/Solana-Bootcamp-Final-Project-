@@ -62,7 +62,7 @@ In your terminal you should see an output similar to the one below.
 <p/>
 
 1. After the minting, we will see that we actually have an NFT with a supply of 1. 
-It contains a Pokemon Card, which is has an element of fire and from 1989. Notice that mint holds the mint address that is printed in the first line of the output. Also, assocAccount is storing the public key of John Doe ATA. 
+It contains a Pokemon Card, which is has an element of fire and it is a charlizard. Notice that mint holds the mint address that is printed in the first line of the output. Also, assocAccount is storing the public key of John Doe ATA. 
 
 2. After transfer, mint is the same, as it should be since the minter of the NFT did not change. Only the current holder is updated which is why the assocAccount is now Jane Doe ATA. 
 
