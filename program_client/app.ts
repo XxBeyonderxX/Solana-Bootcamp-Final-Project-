@@ -76,7 +76,7 @@ async function main(feePayer: Keypair) {
         },
         progId,
     );
-    console.info("+==== Gem Metadata Address ====+");
+    console.info("+==== Pokemon Metadata Address ====+");
     console.info(gemPub.toBase58());
 
     /**
@@ -133,7 +133,7 @@ async function main(feePayer: Keypair) {
      * Get the Gem Metadata
      */
     let gem = await getPokeMetadata(gemPub);
-    console.info("+==== Gem Metadata ====+");
+    console.info("+==== Pokemon Metadata ====+");
     console.info(gem);
     console.assert(gem!.assocAccount!.toBase58(), johnDoeATA.toBase58());
 
@@ -166,7 +166,7 @@ async function main(feePayer: Keypair) {
      * Get the Gem Metadata
      */
     gem = await getPokeMetadata(gemPub);
-    console.info("+==== Gem Metadata ====+");
+    console.info("+==== Pokemon Metadata ====+");
     console.info(gem);
     console.assert(gem!.assocAccount!.toBase58(), janeDoeATA.toBase58());
 
@@ -195,7 +195,7 @@ async function main(feePayer: Keypair) {
      * Get the Gem Metadata
      */
     gem = await getPokeMetadata(gemPub);
-    console.info("+==== Gem Metadata ====+");
+    console.info("+==== Pokemon Metadata ====+");
     console.info(gem);
     console.assert(typeof gem!.assocAccount, "undefined");
 }
