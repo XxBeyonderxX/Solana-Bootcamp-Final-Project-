@@ -56,9 +56,9 @@ Execute the client by typing the following command
 ### Step 8: Explore the Output
 In your terminal you should see an output similar to the one below.
 
-<img width="811" alt="Screen Shot 2023-12-09 at 4 04 29 PM" src="https://github.com/XxBeyonderxX/Solana-Bootcamp-Final-Project-/blob/main/Screenshot%202023-12-17%20155400.png">
-<img width="811" alt="Screen Shot 2023-12-09 at 4 04 29 PM" src="https://github.com/XxBeyonderxX/Solana-Bootcamp-Final-Project-/blob/main/Screenshot%202023-12-17%20155428.png">
-<img width="811" alt="Screen Shot 2023-12-09 at 4 04 29 PM" src="https://github.com/XxBeyonderxX/Solana-Bootcamp-Final-Project-/blob/main/Screenshot%202023-12-17%20155445.png">
+<img width="400" alt="Screen Shot 2023-12-09 at 4 04 29 PM" src="https://github.com/XxBeyonderxX/Solana-Bootcamp-Final-Project-/blob/main/Screenshot%202023-12-17%20155400.png">
+<img width="400" alt="Screen Shot 2023-12-09 at 4 04 29 PM" src="https://github.com/XxBeyonderxX/Solana-Bootcamp-Final-Project-/blob/main/Screenshot%202023-12-17%20155428.png">
+<img width="400" alt="Screen Shot 2023-12-09 at 4 04 29 PM" src="https://github.com/XxBeyonderxX/Solana-Bootcamp-Final-Project-/blob/main/Screenshot%202023-12-17%20155445.png">
 <p/>
 
 1. After the minting, we will see that we actually have an NFT with a supply of 1. 
