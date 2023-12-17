@@ -1,0 +1,81 @@
+cidl: "0.8"
+info:
+  name: nft_pokemon
+  title: NFT pokemon cards
+  version: 0.0.1
+  license:
+    name: Unlicense
+    identifier: Unlicense
+types:
+  PokeMetadata:
+    solana:
+      seeds:
+        - name: "pokemon"
+        - name: mint
+          type: sol:pubkey
+    fields:
+      - name: element
+        type: string
+        solana:
+          attributes: [ cap:16 ]
+      - name: rarity
+        type: string
+        solana:
+          attributes: [ cap:16 ]
+      - name: short_description
+        type: string
+        solana:
+          attributes: [ cap:255 ]
+      - name: mint
+        type: sol:pubkey
+      - name: assoc_account
+        type: rs:option<sol:pubkey>
+methods:
+  - name: catch_pokemon
+    uses:
+      - csl_spl_token.initialize_mint2
+      - csl_spl_assoc_token.create
+      - csl_spl_token.mint_to
+      - csl_spl_token.set_authority
+    inputs:
+      - name: mint
+        type: csl_spl_token.Mint
+        solana:
+          attributes: [ init ]
+      - name: pokemon
+        type: PokeMetadata
+        solana:
+          attributes: [ init ]
+          seeds:
+            mint: mint
+      - name: element
+        type: string
+      - name: rarity
+        type: string
+      - name: short_description
+        type: string
+  - name: trade_pokemon
+    uses:
+      - csl_spl_assoc_token.create
+      - csl_spl_token.transfer_checked
+    inputs:
+      - name: mint
+        type: csl_spl_token.Mint
+      - name: pokemon
+        type: PokeMetadata
+        solana:
+          attributes: [ mut ]
+          seeds:
+            mint: mint
+  - name: release_pokemon
+    uses:
+      - csl_spl_token.burn
+    inputS:
+      - name: mint
+        type: csl_spl_token.Mint
+      - name: pokemon
+        type: PokeMetadata
+        solana:
+          attributes: [ mut ]
+          seeds:
+            mint: mint   
